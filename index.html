@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lorena Benfica | Psicóloga Clínica</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@100..900&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface-variant": "#404945",
+                    "tertiary": "#4d605b",
+                    "on-tertiary-container": "#f4fffb",
+                    "on-primary-fixed-variant": "#095042",
+                    "primary": "#276657",
+                    "surface-bright": "#f8faf9",
+                    "background": "#f8faf9",
+                    "on-error-container": "#93000a",
+                    "on-primary-container": "#f4fff9",
+                    "on-surface": "#191c1c",
+                    "inverse-surface": "#2e3131",
+                    "surface": "#f8faf9",
+                    "surface-tint": "#2a6959",
+                    "surface-container-low": "#f2f4f3",
+                    "surface-container": "#eceeed",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#35675a",
+                    "on-tertiary-fixed-variant": "#384a46",
+                    "primary-fixed-dim": "#94d3c0",
+                    "secondary-container": "#b8eedc",
+                    "on-background": "#191c1c",
+                    "on-tertiary-fixed": "#0d1f1b",
+                    "surface-dim": "#d8dada",
+                    "error": "#ba1a1a",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed-dim": "#b7cbc5",
+                    "on-secondary-container": "#3b6d5f",
+                    "outline": "#707975",
+                    "primary-fixed": "#b0efdb",
+                    "on-primary-fixed": "#002019",
+                    "outline-variant": "#bfc9c4",
+                    "on-secondary-fixed": "#002019",
+                    "on-secondary-fixed-variant": "#1b4f42",
+                    "tertiary-fixed": "#d3e7e1",
+                    "secondary-fixed": "#b8eedc",
+                    "surface-variant": "#e1e3e2",
+                    "primary-container": "#427f6f",
+                    "inverse-on-surface": "#eff1f0",
+                    "inverse-primary": "#94d3c0",
+                    "secondary-fixed-dim": "#9dd1c0",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "surface-container-highest": "#e1e3e2",
+                    "tertiary-container": "#667873",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#e6e9e8",
+                    "on-error": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "container-max-width": "1120px",
+                    "section-padding-desktop": "120px",
+                    "base": "8px",
+                    "section-padding-mobile": "64px"
+            },
+            "fontFamily": {
+                    "headline-xl-mobile": ["Manrope"],
+                    "label-md": ["Inter"],
+                    "headline-xl": ["Manrope"],
+                    "headline-lg": ["Manrope"],
+                    "body-md": ["Inter"],
+                    "headline-md": ["Manrope"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-xl-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-xl": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #f8faf9;
+            color: #191c1c;
+            scroll-behavior: smooth;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .editorial-shadow {
+            box-shadow: 0px 10px 30px rgba(26, 38, 34, 0.04);
+        }
+        .organic-overlap {
+            margin-top: -40px;
+            z-index: 10;
+        }
+        @media (max-width: 768px) {
+            .organic-overlap {
+                margin-top: -20px;
+            }
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface">
+<!-- TopNavBar -->
+<header class="docked full-width top-0 sticky z-50 bg-surface/80 backdrop-blur-md dark:bg-surface-dim/80 h-20 transition-all duration-300">
+<nav class="flex justify-between items-center px-gutter w-full max-w-container-max-width mx-auto h-full">
+<div class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim tracking-tight font-extrabold">
+                Lorena Benfica
+            </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-md text-label-md text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#abordagem">Abordagem</a>
+<a class="font-label-md text-label-md text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#servicos">Serviços</a>
+<a class="font-label-md text-label-md text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#sobre">Sobre</a>
+<a class="bg-primary text-on-primary px-8 py-3 rounded-xl font-label-md text-label-md hover:bg-[#3D6F61] transition-all active:opacity-80" href="https://wa.me/5531986920822">
+                    Agendar Consulta
+                </a>
+</div>
+<!-- Mobile Menu Toggle (Simplified for Design) -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative pt-12 md:pt-24 pb-section-padding-mobile md:pb-section-padding-desktop px-gutter">
+<div class="max-w-container-max-width mx-auto flex flex-col md:flex-row items-center gap-12">
+<div class="w-full md:w-1/2 space-y-6">
+<h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary leading-tight">
+                        Um espaço seguro para cuidar da sua saúde mental
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                        Atendimento clínico focado no acolhimento, escuta ativa e no seu desenvolvimento pessoal. Redescubra seu equilíbrio emocional em um ambiente de total sigilo e profissionalismo.
+                    </p>
+<div class="pt-4">
+<a class="inline-flex items-center gap-3 bg-primary text-on-primary px-10 py-4 rounded-xl font-headline-md text-label-md hover:bg-[#3D6F61] transition-all editorial-shadow" href="https://wa.me/5531986920822">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+                            Iniciar conversa no WhatsApp
+                        </a>
+</div>
+</div>
+<div class="w-full md:w-1/2 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden editorial-shadow border border-outline-variant/20">
+<img class="w-full h-full object-cover" data-alt="A highly professional and serene interior photography of a modern Brazilian clinical psychology office. The room features soft, warm natural sunlight filtering through thin linen curtains. Minimalist furniture including a comfortable upholstered armchair in light gray and a small oak side table with a glass of water. The color palette is dominated by off-whites, soft greens, and natural wood tones. The atmosphere is peaceful, grounded, and authoritative, evoking immediate relief." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRF9nY25KBUJjWGT821MRdnrYysTCJsxEjs0dylNdisiEZ5I48yJcqawIB7RGHFTHp_MoA2RSvw3aL_vNuYTJcnFaX_3RuoIhtxz76dCuL_gzXRsUOIfKHmYh22XygX4ZdAL5ARqxuczNRU66Dq592IcuEDlD5MfeVYsEcXJeixRnpX93FvUZtF736vgk72hQ27FpOVsxXiJeKgwBHRB7vCGcnhNlIV4aT9TV1mlLGsb6ew7jgXbnmf9PACA6jOxRzvQt25evjM8c"/>
+</div>
+<!-- Aesthetic Detail -->
+<div class="absolute -bottom-8 -left-8 hidden md:block bg-secondary-container p-8 rounded-xl max-w-xs border border-outline-variant/30">
+<p class="font-label-md text-on-secondary-container italic">
+                            "A psicoterapia é um processo de redescoberta e fortalecimento dos seus recursos internos."
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Editorial Section -->
+<section class="bg-surface-container-low py-section-padding-mobile md:py-section-padding-desktop px-gutter overflow-hidden" id="abordagem">
+<div class="max-w-container-max-width mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-5 order-2 md:order-1">
+<div class="space-y-8">
+<div class="w-12 h-1 bg-primary"></div>
+<h2 class="font-headline-lg text-headline-lg text-primary">A importância da terapia no mundo contemporâneo</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                Viver com equilíbrio exige mais do que apenas produtividade. Exige autoconhecimento e o acolhimento das nossas vulnerabilidades. Minha abordagem clínica é pautada na ética profissional brasileira e no humanismo, oferecendo uma escuta atenta que não julga, mas que caminha junto.
+                            </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                Cada sessão é um convite para explorar novas perspectivas sobre si mesmo, tratando demandas como ansiedade, estresse e conflitos existenciais com a seriedade e a doçura que a saúde mental exige.
+                            </p>
+</div>
+</div>
+<div class="md:col-span-7 order-1 md:order-2 flex justify-end">
+<div class="relative w-full max-w-lg">
+<div class="aspect-square rounded-full border-[1.5px] border-primary/20 absolute -top-10 -right-10 w-full h-full animate-[spin_20s_linear_infinite]"></div>
+<div class="aspect-square bg-surface-container-lowest rounded-xl overflow-hidden relative z-10 border border-outline-variant/30 editorial-shadow">
+<img class="w-full h-full object-cover" data-alt="A close-up, high-end editorial portrait of a professional female psychologist in a bright, modern setting. She is dressed in soft neutral tones, conveying an air of calm confidence, empathy, and professional authority. The lighting is soft and flattering, emphasizing a clinical yet warm environment with plants in the blurred background. The aesthetic is clean, sophisticated, and trustworthy, using a palette of soft greens and pristine whites." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiFEMyzrao-2Pak12g7huMLcMXely71u71o154Ob1y5zwCNLcD85g247x8YeeXUxpYvf4R8vHh590_TCRJ7mVxQu14IbXjpitnI1D1wXSt4g9f2jXYRto3S82ezPWPpjSDj0dC4foq8G57SQtDedHRHOdUYsFVwNDlzHbM1D9iIw_gjeRWuCupVAwVANIQQEEDciAMETJihlAdGz7pIN3CDEfg2yb3ots3QIWmN6mEVb7uw5fjCg_drh41b4V3gtPhFAicd2ERueU"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Areas of Expertise (Bento Style) -->
+<section class="py-section-padding-mobile md:py-section-padding-desktop px-gutter" id="servicos">
+<div class="max-w-container-max-width mx-auto">
+<div class="text-center mb-16 space-y-4">
+<span class="font-label-md text-label-md text-primary tracking-widest uppercase">Áreas de Atuação</span>
+<h2 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface">Cuidado especializado para cada fase</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Adultos -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/30 transition-transform hover:-translate-y-1 duration-300">
+<div class="text-primary mb-6">
+<span class="material-symbols-outlined text-4xl">person</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4">Adultos</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Foco em questões de carreira, relacionamentos, ansiedade e depressão. Um espaço para organizar pensamentos e fortalecer a autonomia emocional.
+                        </p>
+</div>
+<!-- Adolescentes -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/30 transition-transform hover:-translate-y-1 duration-300">
+<div class="text-primary mb-6">
+<span class="material-symbols-outlined text-4xl">child_care</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4">Adolescentes</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Suporte emocional em uma fase de transição intensa. Acolhimento para questões de identidade, pressões escolares e dinâmicas familiares.
+                        </p>
+</div>
+<!-- Ansiedade & Autoconhecimento -->
+<div class="bg-primary text-on-primary p-8 rounded-xl editorial-shadow transition-transform hover:-translate-y-1 duration-300">
+<div class="text-on-primary mb-6">
+<span class="material-symbols-outlined text-4xl">psychology</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4">Específicos</h3>
+<p class="font-body-md text-body-md opacity-90">
+                            Intervenções direcionadas para transtornos de ansiedade, processos de luto, traumas e a busca profunda pelo autoconhecimento continuado.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Section (Full Width with Text Overlay) -->
+<section class="relative h-[614px] min-h-[400px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="A wide, atmospheric shot of a serene landscape in Minas Gerais, Brazil, during the 'golden hour'. Soft, misty green mountains in the distance, lush vegetation in the foreground, and a sky painted in pale, calming hues of white and sage green. The lighting is organic and peaceful, representing the journey of internal tranquility and psychological growth. The image quality is high-end, magazine-style photography with a minimalist composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJFvoAInP-JVPnlfn5lsOKfLIjgnuZAZRcjP1szYU8dzAWVSuUpHYvcCjqUlS4FoqVZfrAjo5PMyHPM83pc3EFagOtBb7ehcCX8xQbfcKEn5jXdBEzoJjZ5XQM0NCgotj528JHxHaV5Z1OMZjQoZADDYc4zOOjUlAhjJyEEAK5LdbUeSUyontBW2m-ImJkVxYiHreWKHroBAe7CwoxPLKJLvLh0oD4Lno1k7oezE8OqXf6b7btiAnb2f_dpeCA6YJqIRmbiW7Grt8"/>
+<div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+</div>
+<div class="relative z-10 px-gutter w-full max-w-container-max-width mx-auto">
+<div class="max-w-xl bg-surface/90 backdrop-blur-sm p-10 md:p-16 rounded-xl editorial-shadow">
+<h3 class="font-headline-lg text-headline-lg text-primary mb-6">Equilíbrio que vem de dentro</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant italic">
+                        "Não somos apenas o que pensamos, somos o que escolhemos fazer com o que sentimos."
+                    </p>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-section-padding-mobile md:py-section-padding-desktop px-gutter">
+<div class="max-w-container-max-width mx-auto bg-surface-container-high rounded-xl p-12 md:p-24 text-center space-y-8 border border-outline-variant/20">
+<h2 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary">Vamos iniciar sua jornada de cuidado?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                    Se você tem dúvidas sobre como funciona o processo terapêutico ou deseja verificar horários disponíveis, sinta-se à vontade para me enviar uma mensagem.
+                </p>
+<div class="flex flex-col md:flex-row justify-center items-center gap-6 pt-4">
+<a class="w-full md:w-auto inline-flex items-center justify-center gap-3 bg-primary text-on-primary px-12 py-5 rounded-xl font-headline-md text-label-md hover:bg-[#3D6F61] transition-all editorial-shadow" href="https://wa.me/5531986920822">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">qr_code_2</span>
+                        (31) 98692-0822
+                    </a>
+<a class="w-full md:w-auto inline-flex items-center justify-center gap-3 border border-primary text-primary px-12 py-5 rounded-xl font-headline-md text-label-md hover:bg-primary/5 transition-all" href="#servicos">
+                        Ver áreas de atuação
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="full-width bg-surface-container-low dark:bg-surface-container-lowest border-t border-outline-variant/30">
+<div class="flex flex-col md:flex-row justify-between items-center py-16 px-gutter max-w-container-max-width mx-auto gap-12">
+<div class="space-y-4 text-center md:text-left">
+<div class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim font-bold">
+                    Lorena Benfica
+                </div>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-70">
+                    © 2024 Lorena Benfica Psicóloga Clínica. <br/>
+                    CRP 06/XXXXX - Registro Profissional Ativo.
+                </p>
+</div>
+<div class="flex flex-col md:flex-row gap-8 items-center">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-container transition-colors" href="https://wa.me/5531986920822">WhatsApp</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-container transition-colors" href="#">Instagram</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary-container transition-colors" data-location="Belo Horizonte" href="https://maps.google.com">Localização</a>
+</div>
+</div>
+<div class="py-8 text-center border-t border-outline-variant/10">
+<span class="font-label-md text-xs opacity-40 uppercase tracking-[0.2em]">Ética • Acolhimento • Sigilo</span>
+</div>
+</footer>
+<script>
+        // Simple scroll reveal effect for editorial sections
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+                observer.observe(section);
+            });
+        });
+
+        // Navbar shadow on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('editorial-shadow');
+            } else {
+                header.classList.remove('editorial-shadow');
+            }
+        });
+    </script>
+</body></html>
